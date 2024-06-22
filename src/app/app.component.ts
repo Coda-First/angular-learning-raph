@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
       new Date()
     );
     this.myOtherSnap = new FaceSnap(
-      'Korea',
+      'Busan, Seoul',
       'Where I\'m going this summer!',
       'https://media.istockphoto.com/id/1137568153/fr/photo/fleurs-de-cerisier-au-printemps-s%C3%A9oul-en-cor%C3%A9e.jpg?s=612x612&w=0&k=20&c=RTos76QZmAiCX2VvWL0w75O8fSqm4tqLT6T2_4LqEV0=',
       0,
@@ -36,5 +36,6 @@ export class AppComponent implements OnInit {
       0,
       new Date()
     );
+    this.myOtherSnap.setLocation('Korea');
   }
 }
