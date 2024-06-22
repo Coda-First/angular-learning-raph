@@ -8,9 +8,9 @@ export class FaceSnap {
     public createdAt: Date
   ) { }
   addSnap(): void {
-    this.snaps--;
+    this.snaps++;
   }
   removeSnap(): void {
-    this.snaps++;
+    this.snaps--;
   }
 }
