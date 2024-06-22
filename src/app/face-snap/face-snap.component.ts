@@ -21,4 +21,8 @@ export class FaceSnapComponent implements OnInit {
     this.createdAt = new Date();
     this.snaps = 0;
   }
+
+  onAddSnap(): void {
+    this.snaps++;
+  }
 }
