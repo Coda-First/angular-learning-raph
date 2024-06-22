@@ -12,22 +12,29 @@ export class FaceSnapComponent implements OnInit {
   @Input() faceSnap!: FaceSnap;
 
   snapButtonText!: string;
-  hasSnapped!: boolean;
+  userHasSnapped!: boolean;
 
   ngOnInit(): void {
     this.snapButtonText = 'Oh Snap!'
-    this.hasSnapped = false;
+    this.userHasSnapped = false;
   }
 
-  onUserSnap(): void {
-    if (this.hasSnapped) {
-      this.faceSnap.snaps--;
-      this.hasSnapped = false;
-      this.snapButtonText = 'Oh Snap!'
+  onSnap(): void {
+    if (this.userHasSnapped) {
+      this.unSnap();
     } else {
-      this.faceSnap.snaps++;
-      this.snapButtonText = 'Oops Unsnap!';
-      this.hasSnapped = true;
+      this.snap();
     }
+  }
+  unSnap() {
+    this.faceSnap.removeSnap();
+    this.userHasSnapped = false;
+    this.snapButtonText = 'Oh Snap!'
+  }
+
+  snap() {
+    this.faceSnap.snaps++;
+    this.snapButtonText = 'Oops Unsnap!';
+    this.userHasSnapped = true;
   }
 }

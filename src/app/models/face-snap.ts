@@ -6,7 +6,11 @@ export class FaceSnap {
     public imageUrl: string,
     public snaps: number,
     public createdAt: Date
-  ) {
-
+  ) { }
+  addSnap(): void {
+    this.snaps--;
+  }
+  removeSnap(): void {
+    this.snaps++;
   }
 }
