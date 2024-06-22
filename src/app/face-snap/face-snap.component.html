@@ -8,6 +8,5 @@
   }
   <p>{{ faceSnap.description }}</p>
   <p>Created at: {{ faceSnap.createdAt }}</p>
-  <button (click)="onSnap()">{{snapButtonText}}</button>
-  <p>{{ faceSnap.snaps }} 🫰</p>
+  <p><button (click)="onSnap()">{{snapButtonText}}</button>{{ faceSnap.snaps }} 🫰</p>
 </div>
