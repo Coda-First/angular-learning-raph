@@ -13,6 +13,8 @@ export class FaceSnapComponent implements OnInit {
   createdAt!: Date;
   snaps!: number;
   imageUrl!: string;
+  snapButtonText!: string;
+  hasSnapped!: boolean;
 
   ngOnInit(): void {
     this.title = 'Coda';
@@ -20,9 +22,19 @@ export class FaceSnapComponent implements OnInit {
     this.imageUrl = 'https://static.wixstatic.com/media/324d06_440fbbb68a694e76884a751602f6c32c~mv2.jpg/v1/crop/x_20,y_35,w_925,h_338/fill/w_394,h_142,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/PROFILE-PIC-LK-3_edited.jpg';
     this.createdAt = new Date();
     this.snaps = 0;
+    this.snapButtonText = 'Oh Snap!'
+    this.hasSnapped = false;
   }
 
-  onAddSnap(): void {
-    this.snaps++;
+  onUserSnap(): void {
+    if (this.hasSnapped) {
+      this.snaps--;
+      this.hasSnapped = false;
+      this.snapButtonText = 'Oh Snap!'
+    } else {
+      this.snaps++;
+      this.snapButtonText = 'Oups Unsnap!';
+      this.hasSnapped = true;
+    }
   }
 }
