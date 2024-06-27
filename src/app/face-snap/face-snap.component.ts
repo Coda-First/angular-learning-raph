@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap';
-import { DatePipe, LowerCasePipe, NgClass, NgStyle, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { DatePipe, DecimalPipe, LowerCasePipe, NgClass, NgStyle, TitleCasePipe, UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-face-snap',
   standalone: true,
-  imports: [NgStyle, NgClass, UpperCasePipe, LowerCasePipe, TitleCasePipe, DatePipe],
+  imports: [NgStyle, NgClass, UpperCasePipe, LowerCasePipe, TitleCasePipe, DatePipe, DecimalPipe],
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss'
 })
@@ -14,6 +14,7 @@ export class FaceSnapComponent implements OnInit {
 
   snapButtonText!: string;
   userHasSnapped!: boolean;
+  myLargeNumber: number = 4667916.8899;
 
   ngOnInit(): void {
     this.snapButtonText = 'Oh Snap!'
