@@ -8,10 +8,9 @@
   }
   <p>{{ faceSnap.description }}</p>
   {{ '' // Their are several types of datePipe formats, but this one is the most common }}
-  <p>Created at: {{ faceSnap.createdAt |date:'medium' }}</p>
+  <p>Created at: {{ faceSnap.createdAt | date:'medium' }}</p>
   <p>
     <button (click)="onSnap()">{{snapButtonText}}</button>
     <span [ngStyle]="{color:'rgb(0,'+faceSnap.snaps+',0)'}"> 🫰 {{ faceSnap.snaps }}</span>
   </p>
-  <p>{{ price | currency:'USD':'symbol':'1.2-2' }}</p>
 </div>
