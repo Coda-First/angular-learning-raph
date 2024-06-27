@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
       new FaceSnap(
         'High School Sainte Croix Saint Euverte',
         'Where I was studying last year!',
-        'https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/302135796_182300647637631_2218451319955865478_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lFO8ARu92JcQ7kNvgF5qfwv&_nc_ht=scontent-cdg4-1.xx&oh=00_AYCX-V6NfE_y7vQZ0ndHKK410IHyKLyXP7cZLCqawyRVXg&oe=667CA136',
+        'https://upload.wikimedia.org/wikipedia/commons/c/c2/Orl%C3%A9ans_Lyc%C3%A9e_Sainte-Croix-Saint-Euverte.jpg',
         5,
         new Date()
       )
