@@ -13,5 +13,5 @@
     <button (click)="onSnap()">{{snapButtonText}}</button>
     <span [ngStyle]="{color:'rgb(0,'+faceSnap.snaps+',0)'}"> 🫰 {{ faceSnap.snaps }}</span>
   </p>
-  <p>{{ myPercentage | percent:'1.1-1' }}</p>
+  <p>{{ price | currency:'USD':'symbol':'1.2-2' }}</p>
 </div>
