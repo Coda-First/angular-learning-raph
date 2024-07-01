@@ -20,7 +20,6 @@ export class FaceSnapListComponent implements OnInit {
 
   ngOnInit(): void {
     this.faceSnaps = this.faceSnapsService.getFaceSnaps();
-    this.faceSnaps[1].setLocation('Korea');
   }
 
 }

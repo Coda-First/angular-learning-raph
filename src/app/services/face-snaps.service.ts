@@ -20,7 +20,7 @@ export class FaceSnapsService {
       'https://media.istockphoto.com/id/1137568153/fr/photo/fleurs-de-cerisier-au-printemps-s%C3%A9oul-en-cor%C3%A9e.jpg?s=612x612&w=0&k=20&c=RTos76QZmAiCX2VvWL0w75O8fSqm4tqLT6T2_4LqEV0=',
       100,
       new Date()
-    ),
+    ).withLocation('Korea'),
     new FaceSnap(
       'High School Sainte Croix Saint Euverte',
       'Where I was studying last year!',
