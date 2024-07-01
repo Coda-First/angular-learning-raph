@@ -1,6 +1,7 @@
 export class FaceSnap {
 
   location?: string;
+  id: string;
 
   constructor(
     public title: string,
@@ -8,7 +9,11 @@ export class FaceSnap {
     public imageUrl: string,
     public snaps: number,
     public createdAt: Date
-  ) { }
+  ) {
+    // 👇 Using crypto API to generate a random UUID and using substring to get the first 8 characters due to the type of app
+    this.id = crypto.randomUUID().substring(0, 8);
+    console.log(this);
+  }
   addSnap(): void {
     this.snaps++;
   }
