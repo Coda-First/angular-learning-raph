@@ -1,12 +1,34 @@
-.landing-page {
+.welcome {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #7148fc;
+  flex-direction: column;
 
-  svg {
-    margin-bottom: 50px;
-    width: 100px;
-    height: 100px;
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7148fc;
+
+    svg {
+      margin-bottom: 50px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    background-color: #7148fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 200px;
+    margin: 0 auto;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
