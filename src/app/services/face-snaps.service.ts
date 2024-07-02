@@ -42,4 +42,13 @@ export class FaceSnapsService {
     }
     foundFaceSnap.addSnap();
   }
+
+  unSnapFaceById(FaceSnapId: string): void {
+    const foundFaceSnap = this.faceSnaps.find(faceSnap => faceSnap.id === FaceSnapId);
+
+    if (!foundFaceSnap) {
+      throw new Error('FaceSnap not found!');
+    }
+    foundFaceSnap.removeSnap();
+  }
 }
