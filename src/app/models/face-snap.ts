@@ -1,3 +1,5 @@
+import { SnapType } from "./snap-type.type";
+
 export class FaceSnap {
 
   location?: string;
@@ -12,13 +14,20 @@ export class FaceSnap {
   ) {
     // 👇 Using crypto API to generate a random UUID and using substring to get the first 8 characters due to the type of app
     this.id = crypto.randomUUID().substring(0, 8);
-    console.log(this);
   }
   addSnap(): void {
     this.snaps++;
   }
   removeSnap(): void {
     this.snaps--;
+  }
+
+  snap(snapType: SnapType) {
+    if (snapType === 'snap') {
+      this.addSnap();
+    } else if (snapType === 'unsnap') {
+      this.removeSnap();
+    }
   }
 
   setLocation(location: string): void {
