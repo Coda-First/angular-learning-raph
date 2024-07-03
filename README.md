@@ -1,27 +1,86 @@
-# AngularLearningRaph
+<div align="center" id="top"> 
+  <img src="https://miro.medium.com/v2/resize:fit:960/1*FqNPqslt0wc985iUWowLVQ.png" alt="Angular Learning Raph" />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+&#xa0;
 
-## Development server
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h1 align="center">Angular Learning Raph</h1>
 
-## Code scaffolding
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Coda-First/angular-learning-raph?color=56BEB8">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Coda-First/angular-learning-raph?color=56BEB8">
 
-## Build
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Coda-First/angular-learning-raph?color=56BEB8">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  <img alt="License" src="https://img.shields.io/github/license/Coda-First/angular-learning-raph?color=56BEB8">
 
-## Running unit tests
+  <img alt="Github issues" src="https://img.shields.io/github/issues/Raxuis/angular-learning-raph?color=56BEB8" />
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  <img alt="Github forks" src="https://img.shields.io/github/forks/Raxuis/angular-learning-raph?color=56BEB8" />
+</p>
 
-## Running end-to-end tests
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/Raxuis" target="_blank">Author</a>
+</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br>
 
-## Further help
+## :dart: About
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is a simple application to learn Angular.
+
+## :sparkles: Features
+
+:heavy_check_mark: FaceSnap component;\
+:heavy_check_mark: FaceSnapService;\
+:heavy_check_mark: FaceSnapsComponent;\
+:heavy_check_mark: FaceSnapsService;\
+:heavy_check_mark: SingleFaceSnapComponent;
+
+## :rocket: Technologies
+
+The following tools were used in this project:
+
+- [Angular](https://angular.dev/)
+- [Node.js](https://nodejs.org/en/)
+- [SCSS](https://sass-lang.com/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Node](https://nodejs.org/en/) and [Angular CLI](https://angular.io/cli) installed.
+
+## :checkered_flag: Starting
+
+```bash
+# Clone this project
+$ git clone https://github.com/Coda-First/angular-learning-raph
+
+# Access
+$ cd angular-learning-raph
+
+# Install dependencies
+$ npm install
+
+# Run the project
+$ ng serve
+
+# The server will initialize in the <http://localhost:4200>
+```
+
+## :memo: License
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+Made with :heart: by <a href="https://github.com/Raxuis" target="_blank">Raphaël</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
