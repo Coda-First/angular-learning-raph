@@ -16,9 +16,9 @@
 
   <img alt="License" src="https://img.shields.io/github/license/Coda-First/angular-learning-raph?color=56BEB8">
 
-  <img alt="Github issues" src="https://img.shields.io/github/issues/Raxuis/angular-learning-raph?color=56BEB8" />
+  <img alt="Github issues" src="https://img.shields.io/github/issues/Coda-First/angular-learning-raph?color=56BEB8" />
 
-  <img alt="Github forks" src="https://img.shields.io/github/forks/Raxuis/angular-learning-raph?color=56BEB8" />
+  <img alt="Github forks" src="https://img.shields.io/github/forks/Coda-First/angular-learning-raph?color=56BEB8" />
 </p>
 
 <p align="center">
