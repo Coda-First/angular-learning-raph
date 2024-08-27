@@ -1,3 +1,5 @@
+<button routerLink="/create" class="create-button">Create a new face snap</button>
+
 @for (faceSnap of faceSnaps; track faceSnap.title) {
 <app-face-snap [faceSnap]="faceSnap" />
 }
