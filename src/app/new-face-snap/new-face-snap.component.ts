@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FaceSnapsService } from '../services/face-snaps.service';
 import { FaceSnap } from '../models/face-snap';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms'; // Importing FormsModule to be able to use [(ngModel)]
 
 @Component({
   selector: 'app-new-face-snap',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './new-face-snap.component.html',
   styleUrl: './new-face-snap.component.scss'
 })

@@ -50,4 +50,8 @@ export class FaceSnapsService {
 
     return foundFaceSnap;
   }
+
+  addFaceSnap(faceSnap: FaceSnap): void {
+    this.faceSnaps.push(faceSnap);
+  }
 }
